@@ -9,7 +9,7 @@ tmp/
 *.bak
 *.swp
 *~.nib
-local.properties
+*.properties
 .settings/
 .loadpath
 .recommenders
@@ -92,9 +92,6 @@ local.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
-<<<<<<< HEAD
-/.metadata/
-=======
 
 ### macOS ###
 # General
@@ -219,4 +216,3 @@ gradle-app.setting
 *.hprof
 
 # End of https://www.toptal.com/developers/gitignore/api/eclipse,windows,macos,maven,gradle,java,visualstudiocode
->>>>>>> 56e6b7e41387f6b96f2f9cab85ef38a0b26ab41f
