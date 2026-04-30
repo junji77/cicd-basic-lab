@@ -58,7 +58,7 @@ jobs:
       - name: Configure AWS credentials (OIDC)
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/github-actions-cicd-basic-lab-role 
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/github-actions-cicd-basic-lab-role
           aws-region: ${{ env.AWS_REGION }}
           role-session-name: GitHubActions-CI-${{ github.run_id }}
 
@@ -94,4 +94,3 @@ jobs:
           # Job 2 (cd) 로 이미지 URI 전달
           echo "image-uri=${IMAGE_URI}" >> $GITHUB_OUTPUT
           echo "image-tag=${TAG}"       >> $GITHUB_OUTPUT
-
